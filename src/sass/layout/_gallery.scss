@@ -1,0 +1,78 @@
+.section {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    background-color: #DDD7D7;
+    background-size: 50px 50px;
+    background-image:
+        linear-gradient(-45deg, transparent 52%, rgba(255, 255, 255, 0.9) 54%, transparent 55%, transparent),
+        linear-gradient(45deg, transparent 52%, rgba(255, 255, 255, 0.6) 54%, transparent 55%, transparent),
+        linear-gradient(-45deg, transparent 50%, rgba(0, 0, 0, 0.1) 52%, transparent 53%, transparent),
+        linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.05) 52%, transparent 53%, transparent);
+
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.gallery {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery__link {
+    display: block;
+    width: calc((100% - 60px) / 4);
+
+    transition: all linear 250ms;
+    cursor: zoom-in;
+
+
+
+
+    &:hover,
+    &:focus {
+        scale: 1.02;
+
+    }
+}
+
+.photo-card {
+    height: 100%;
+
+
+}
+
+.photo-card__img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    margin-top: auto;
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: #ffe8c2;
+}
+
+.info-item {
+    text-decoration: none;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+}
